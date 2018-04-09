@@ -1,0 +1,89 @@
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000 url("images/background.png") no-repeat center;
+    background-attachment: fixed;
+    background-size: auto 100vh;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+a, a:link, a:visited, a:hover, a:focus, a:active{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Navigation Bar */
+.nav-container{
+    display: grid;
+    grid-template-areas:'ftm home saved''divider divider divider';
+    grid-template-rows: 6vh 0.5vh;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.nav-button{
+    background-color: #67FEBB;
+    font-size: 2.5vh;
+    padding-top: 1.75vh;
+    text-align: center;
+}
+.nav-button:hover{
+    background-color: ##61E5CD !important;
+}
+.nav-divider{
+    grid-area: divider;
+    background: #fff !important;
+}
+.nav-ftm{ grid-area: ftm; }
+.nav-Home{ grid-area: home; }
+.nav-Saved{ grid-area: saved; }
+.nav-spacer{ height: 20vh; }
+
+/* Search Form */
+.login-content{
+    display: grid;
+    grid-template-areas:'login-logo''login-form';
+}
+.login-logo{
+    grid-area: login-logo;
+    margin: auto;
+}
+.login-logo img{
+    width: 50vh;
+    height: 50vh;
+}
+.login-form{
+    grid-area: login-form;
+    margin: auto;
+    padding: 5vh;
+}
+.login-form form input{
+    background-color: transparent;
+    text-align: center;
+    border-radius: 100vh;
+    padding: 1vh;
+    border: 0.3vw solid #fff;
+    font-size: 2.5vh;
+    color: #fff;
+}
+::placeholder {
+  color: #fff;
+  font-size: 2.5vh;
+}
+
+/* Test iframe */
+.iframe-window{
+    margin: auto;
+    padding: 3vh
+}
+.iframe-window iframe{
+    border: none;
+    display: block;
+    margin: 0 auto;
+    width: 60vh;
+    height: 60vh;
+
+}
